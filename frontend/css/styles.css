@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: #f6f8fb;
+    color: #2d3748;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR (LIGHT + MODERN) */
+.sidebar {
+    width: 240px;
+    background: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    padding: 20px 0;
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sidebar-header h2 {
+    font-size: 18px;
+    color: #4a5568;
+    font-weight: 600;
+}
+
+/* NAV */
+.sidebar-nav {
+    list-style: none;
+}
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 6px 10px;
+    border-radius: 10px;
+    color: #4a5568;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.sidebar-nav a:hover {
+    background: #edf2f7;
+}
+
+.sidebar-nav a.active {
+    background: #e6f4ea;
+    color: #2f855a;
+    font-weight: 500;
+}
+
+.sidebar-nav a .icon {
+    margin-right: 10px;
+}
+
+/* MAIN */
+.main-content {
+    margin-left: 240px;
+    flex: 1;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* TITLES */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #4a5568;
+}
+
+/* CARD STYLE */
+.form-container,
+.table-container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    margin-bottom: 25px;
+}
+
+/* FORM */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #718096;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    font-size: 14px;
+    background: #f9fafb;
+    transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #68d391;
+    background: #ffffff;
+}
+
+/* BUTTONS */
+button {
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+/* PRIMARY BUTTON */
+#submit-btn {
+    background: #48bb78;
+    color: white;
+}
+
+#submit-btn:hover {
+    background: #38a169;
+}
+
+/* CANCEL */
+#cancel-btn {
+    background: #e2e8f0;
+    color: #4a5568;
+}
+
+#cancel-btn:hover {
+    background: #cbd5e0;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    background: #f1f5f9;
+    color: #4a5568;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+td {
+    font-size: 14px;
+    color: #2d3748;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #edf2f7;
+}
+
+tr:hover {
+    background: #f9fafb;
+}
+
+/* ACTION BUTTONS */
+.btn-edit {
+    background: #f6ad55;
+    color: white;
+    border-radius: 8px;
+}
+
+.btn-edit:hover {
+    background: #ed8936;
+}
+
+.btn-delete {
+    background: #f56565;
+    color: white;
+    border-radius: 8px;
+}
+
+.btn-delete:hover {
+    background: #e53e3e;
+}
+
+/* EMPTY TEXT */
+#no-students,
+#no-faculty,
+#no-courses {
+    text-align: center;
+    color: #a0aec0;
+    padding: 20px;
+}
